@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+     <link rel="stylesheet" href="styles.css" />
+     <title>SCRIMBA NOTES</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+  </head>
+
+
+<!-- Lessons from CSS and HTML course
+     
+-HTML uses = CSS uses : for equals 
+-Use flexbox for centering elements with css (you create a wrapper div for this) you can either select the element and just use the name of the element or the class, add a . before the name 
+
+for Flexbox you need to create the wrapper div, give it a class name or use the element name on CSS then 2 more things
+
+1- display: flex;
+2- justify-content: center;
+see example below with text buttons
+
+Flexbox treats each element as an individual so to group them vertically you use a div, then the divs become what flexbox organizes horizontally
+-->
+
+<!--margin is outside space 
+border is the actual border, padding is inside space
+border takes 3 properties
+border: 1px solid blue
+-->
+
+<!--
+to center elements or classes you need 4 things
+width: 300px; example (however, sometimes some elements have a inherit width so no needed)
+display: block;
+margin-right: auto;
+margin-left: auto;
+-->
+
+<!--
+AS A DESIGN FEATURE
+you should leave more space on left and right for buttons and less space on top and bottom
+-->
+
+
+<!--
+For height of a line box, you don't use Height only on CSS, it doesn't work in some browsers, so you use line-height
+-->
+
+<!--
+text-align in CSS center the text and the button in the body element
+-->
+
+<!-- relative paths
+HTML root directory location is /
+./ is to look inside the same folder your html file is
+../ is to go up one folder
+-->
+
+<!--ALT Text
+all images should have the attribute alt="description of the image"
+it helps with SEO 
+-don't write "image of"
+- should be less than 125 characters
+- imagine you are describing it over the phone
+-->
+
+
+<!--
+CREATING A UTILITY CLASS
+a class for a single CSS property
+i.e. class = "italic"
+then create the class in CSS
+font-style: italic;
+
+an element in its container can have more than 1 class just separate using a space
+<div class="card italic"> (make sure to only have a set of quotes to booked the classes, not a seet of quotes per each class)
+  
+So A Class basically is to give a div a name so you can alter in CSS and to alter the several divs with the same class with the properties given in CSS
+-->
+
+<!--
+justify-content: Space-around;
+provides space around the divs you give this CSS attribute to
+-->
+
+<!--
+Display Felx is the same as display block, which takes all the available space horizontally-->
+
+<!--CSS INHERITANCE
+-helps write DRYer code (don't repeat yourself)
+-Fewer bugs
+-be more efficient
+
+this inheritance will work on any numbers of levels in the tree
+there is a list of 41 property that are inherited, not all CSS property are
+-->
+
+<!--
+CMD + D allows you to select multiple instances in your HTML code of whatever you highlighted.
+-->
+
+<!--
+There is a list of websafe fonts, that means the font recipe for rendering that font is alrady installed in the client(laptop, phone, etc)
+in order to set the font 
+Body {
+font-family: Verdana, Genova, Tahoma, sans-serif: this is a font stack (Sans serif is a cateogry of fonts) (Serif has decorative strokes at the end of letters, Sans Serif doesn't)
+}
+-->
+
+<!--SHORT HAND FOR MARGIN AND PADDING
+
+margin: top right bottom left
+margin: 10px 20px 30px 40px;
+
+another case is 
+margin top bottom right left
+like Y axis and Z axis
+margin 10px 10px auto auto
+you can short hand
+margin: 10px auto;
+-->
+
+<!-- Coolors.co is a neat site to find color combinations -->
+<!-- 
+Netifly deploys projects to the web -->
+
+<!-- 
+TO ADD BACKGROUND IMAGE to the website, you do so on CSS via this way
+body {
+   color: white;
+    background-image: url("images/universe.jpg");
+    background-size: cover;
+
+    } -->
+
+
+    <!-- HOW TO ADD GOOGLE FONTS
+    Copy the code into the head of the HTML
+    also the code into CSS for css
+
+    font families are not inherit from body into buttons.
+      you have to use 
+      font-family: inherit;-->
+
+
+      <!-- to add fonts from a download into css
+
+      @font-face {
+    src: url("Corleone.ttf");
+    font-family: Corleone;
+
+    after you have added it to your project folder
+    than you have to give your elements the font family
+
+    h1 {
+    font-family: Corleone;
+    }
+
+    .ttf fonts are heavier on the website loadin time than WOFF2 fonts.
+
+    LEARN MORE ABOUT @font-face
+    https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face
+    https://web.dev/articles/font-best-practices
+
+} -->
+
+
+
+<!-- SPAN TAG <span> to underline text
+  
+  <div class="ad">
+        <h1>You got the joker 🃏</h1>
+        <h3>Click <span class="cta">here</span> to get your prize! 💰</h3>
+    </div>
+
+    cta is = call to action
+    span is like a div for a word in a paragraph that you will now style in the your CSS file
+    span in inline, divs are block based.
+  
+  -->
+
+
+
+  <!-- in stead of CLASS you can use ID, the difference between them is ID is for unique items and use #before the name of the ID in CSS.
+   you use CLASS when several elements will use the same CSS modifiers. 
+   -->
+
+   <!-- 
+   WEBP images have better compression and act like a GIF, animated. 
+   we can use them in our website. 
+    -->
+
+    <!-- coolors.co can be used to extract a color pallete from an image and use those colors in the design -->
+
+
+<body>
+  <div id="hero">
+    <h1><span id="underline">Miranda</span> <span class="cta">is</span>Yummy! Cute, Smart, Kind and Strong</h1>
+        <div btn-wrapper>
+          <button class="btn"> Miranda's butt </button>
+          <button class="btn"> Miranda's booty </button>
+          <button class="btn"> Miranda's Tooty </button>
+        </div>
+
+
+    <div class="img1">
+      <img src="./img1.jpg"  class="photo" alt="yumminess">
+      <img src="./img2.jpg"  class="photo" alt="yum yummmm!">
+    </div>
+    <div class="gift-section">
+            <h2 class="gift-title">What I think about all day! </h2>
+            <h3 class="gift-hint">(Hover over the gift)</h3>
+            <a href="https://olawellnesscayman.com" target="_blank">
+            <div class="gift-img" id="happy-img-hover"></div></a>
+
+            <h2 class="gift-title">This is me when Miranda's walks by</h2>
+            <div class="gift-img" id="hot-img-hover"></div>
+    </div>
+ </div>
+ 
+    <div id="ftr">
+        <h3>Terms and conditions apply!</h3>
+        <p>Number of kisses Miranda owes me</p>
+        <h1 id="count-el">0</h1>
+    </div>
+
+  <button id="increment-btn" onclick="increment()">INCREMENT</button>
+ <button id="save-btn" onclick="save()">SAVE</button>
+ <p id="save-el">Previous entries:</p> 
+
+  <script src="index.js"></script>
+</body>
+</html>
+
+<!-- THE HERO SECTION OF THE WEBISTE
+ LOGO
+ TITLE
+ AND Call TO ACTION WITH BUTTONS
+ 
+ it is unique so you can use an ID instead of a class for your div
+the body has a default margin, which can be removed with margin: 0;
+
+to create a shadow it requires 4 values
+h1 {
+  text-shadow: 5px -5px 5px black
+              right down blur & color
+}
+
+
+LANG attribute is necessary
+
+you can set the language for differente elements to be different than the language of the HTML file. 
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/lang
+ -->
+
+ <!-- 
+ ALIGN-TIEMS 
+ USED FOR FLEX BOX TO GIVE TEXT A BACKGROUND COLOR 
+ text is by default a block display, so it takes the whole width of the page. 
+you can fix this by
+
+display: flex;
+flex-direction: column;
+align-items: center; you can also use start or end Y axis
+justify-content: center;  you can also use start or end X axis
+
+
+ -->
+
+ <!-- GRADIENT BACKGROUND  
+background: linear-gradient(#14463d, #016a26);
+    -->
+
+    <!-- 
+    Divs are not align they are display blocks -->
+
+    <!-- 
+    NAVIGATION
+    there is an element also called <nav>
+      in the body
+      <nav>
+            <a href="#">Menu</a>m     these are anchor tags that will link to other parts of our site.
+            <a href="#">Book a table</a> the # is only a place holder, it will not direct us to any other location
+            <a href="#">Catering</a>
+        </nav>
+    -->
+
+    <!-- 
+    BACKGROUND IMAGES DON'T HAVE ALT TEXT.
+    
+    we use WAI-ARIA
+
+    YOU WOULD ADD to the div element
+
+    role="img">
+
+    then to provide the alt text, we use the aria-label attribute
+
+    aria-label="two friends cheering and jumping"
+
+    but since we did a hover over change to a gif.
+
+    aria-label="A wrapped present. When hovered over, it changes to reveal a GIF of two friends cheering and jumping.""
+  
+
+   <p id="footer">Want to create your own Birthday GIFt site? Take 
+  
+    <a href="https://scrimba.com/learn/htmlandcss" 
+ 
+  target="_blank">this HTML & CSS course.</a></p>
+        </div>
+
+        CSS
+
+
+#footer {
+    font-style: italic;
+    width: 400px;
+    margin: 40px auto 20px;
+}
+
+a {
+    color: white;
+}
+
+    -->
+
+    <!-- JAVASCRIPT -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+     
+    function number() {
+    console.log(42)
+}
+
+    number()
+
+
+    -->

@@ -1,0 +1,177 @@
+
+body {
+    margin: 0;
+    /* background: #fef8ea;     /* red, blue, yellow, etc  
+    color: #766962;            /* red, blue, yellow, etc 
+    font-size: 20px;        /* 0px - 100px and beyond 
+    font-weight: normal;   /* lighter, normal, bold  */
+     text-align: center;      /*left, center or right   */
+    margin-top: 25px;       /* From 0px and upwards  */
+    /* background-image: url("images/galaxy.webp"); */
+    /* background-image: url("https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3a2Yxd245ZnEyazE4MGo3OWptN3A4aDM2ZDk3MHczcmN0aDl1bGRsNiZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/I7V6Te1Ka0U00/giphy.gif");*/
+    /* font-family: TheGodfather-v2; */
+    /* 
+    // <weight>: Use a value from 400 to 900
+    // <uniquifier>: Use a unique and descriptive class name
+   .orbitron-<uniquifier> { */
+  font-family: "Orbitron", sans-serif;
+  /* font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; */
+/* } */
+    color: gray;
+      text-shadow: 0px 0px 0px white;
+    /* dt::after {
+        content:": ";
+    } */
+/* when adding downloaded fonts---
+@font-face {
+    font-family: TheGodfather-v2;
+    src: url(TheGodfather-v2.ttf);
+} */
+
+}
+
+
+btn-wrapper {
+
+    display:flex;
+    justify-content: center;
+    
+}
+
+.img1{
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+.photo {
+
+    margin: 20px;
+    width: 20%;
+    height: 20%;
+}
+
+.btn {
+
+    padding: 15px 20px;
+    background: BLUE;
+    /* border: none; */
+    border-radius: 2px;
+    font-family: inherit;
+    
+    font-weight: bold;
+    /* font-weight can also be the numbers in the font link 800=bold 900=bolder, etc */
+
+}
+
+.cta {
+    border: 2px solid #A3BC71;
+    padding: 5px 10px;
+    background: blue;
+}
+
+#underline {
+       border-bottom: 2px solid white;
+    
+       /* text-decoration: underline;
+    text-decoration-thickness: 3px; 
+    */
+}
+
+#hero {
+    background-image: url("images/galaxy.webp"); 
+    background-size: cover;
+    padding: 10px 0px 40px 0px;
+}
+
+#ftr {
+    color: red;
+    text-shadow: 0px 0px 0px black;
+}
+
+
+.gift-img {
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    border: 6px solid white;
+    border-radius: 10px;
+    background-image: url("images/gift-cover.jpg");
+    background-size: cover;
+}
+
+#happy-img-hover:hover {
+    background-image: url("images/mnm.jpg");
+}
+
+
+#hot-img-hover:hover {
+    background-image: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmQ2ZmljMW5sYzMwdHdmMmE3bjI2aXQ1eHIyb3k2Z2R0NzB3NGFxMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7W1rgKAxlDe3m/giphy.gif");
+}
+/* 
+a { target-name:new;
+    target-new:tab;
+} */
+
+
+
+button {
+    /* border: none; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#increment-btn {
+    background: darkred;
+}
+
+#save-btn {
+    background: darkgreen;
+}
+
+
+/* 
+a {
+    text-align: center;
+    color: white;
+    margin: 5px;
+    padding: 25px 0;
+    background: #e5383b;
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;  this is to ensure the underline of the link is removed
+}
+    
+a:hover {
+    background-image: url("eyes.jpg")
+}
+
+You can have a class for the covering image of a button, and then add an ID to each individual button so that the background image can change during hover.
+*/
+
+/* 
+SPECEFICITY 
+when you write a value on an ID it takes precedent over a class.
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
