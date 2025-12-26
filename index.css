@@ -1,0 +1,74 @@
+@font-face {
+    font-family: CursedTimerUlil-Aznm;
+    src: url(CursedTimerUlil-Aznm.ttf);
+}
+
+body {
+    margin: 0;
+    font-family: CursedTimerUlil-Aznm, sans-serif;
+    background: #1B244A;
+}
+
+h3 {
+    color: #EEEEEE;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 40px;
+    leading-trim: NONE;
+    line-height: 35.89px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom:  21px;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.scorebox {
+    width: 155px;
+    text-align: center;
+}
+.score-nbr-box {
+    text-align: center;
+    opacity: 1;
+    border-radius: 5px;
+    
+    background: #080001;
+    
+    margin-bottom: 26px;
+    
+}
+
+
+.score-nbr {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 90px;
+    leading-trim: NONE;
+    line-height: 126.67px;
+    letter-spacing: 0%;
+    
+    color: #F94F6D;
+}
+
+button {
+    /* font-family: CursedTimerUlil-Aznm, sans-serif;     */
+    font-family: inherit;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 27.81px;
+    letter-spacing: 0%;
+    text-align: center;    
+    angle: 0 deg;
+    opacity: 1;
+    border-radius: 5px;
+    background: none;
+    border: 2px solid #9AABD8;
+    padding: 7px 9px;
+    color: #9AABD8;
+
+}
