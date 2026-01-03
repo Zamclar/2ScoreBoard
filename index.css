@@ -7,6 +7,10 @@ body {
     margin: 0;
     font-family: CursedTimerUlil-Aznm, sans-serif;
     background: #1B244A;
+    text-align: center;
+    
+
+    
 }
 
 h3 {
@@ -21,6 +25,7 @@ h3 {
     text-align: center;
     margin-bottom:  21px;
 }
+
 .container {
     display: flex;
     justify-content: space-around;
@@ -71,4 +76,28 @@ button {
     padding: 7px 9px;
     color: #9AABD8;
 
+}
+
+.timer-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.timer-display {
+    font-size: 48px;
+    font-family: CursedTimerUlil-Aznm, sans-serif;
+    font-weight: 900;
+    margin: 10px 0;
+}
+
+.timer-controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.timer-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
 }
